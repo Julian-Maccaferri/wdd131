@@ -72,6 +72,11 @@ main {
     padding: 5px 10px 0 0;    
 }
 
+ul {
+    text-align: left;
+    justify-content: center;
+}
+
 footer {
     text-align: center;
     font-weight: 400;

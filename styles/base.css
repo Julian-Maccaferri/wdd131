@@ -3,29 +3,34 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     font-family: "Lato", sans-serif;
+    background-color: #3784C6;
+    color: whitesmoke;
 }
 
 header {
-    color: black;
     text-align: center;    
-    font-weight: 900;     
+    font-weight: 900;
+    margin: 0;     
+}
+
+header h1 {
+    margin-bottom: 0;     
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;    
 }
 
 nav a {
     text-align: center;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
-    padding: 35px;
+    padding: 25px;
 }
 
-nav a:hover {
-    background-color: black;
-    color: blue;
+nav a:hover {    
+    text-decoration: underline;
 }
 
 main {
@@ -35,18 +40,40 @@ main {
 
 .card {
     text-align: center;
-    padding: 25px;
+    padding: 0 25px 25px 25px;
+    background-color: #3696e3;
+    margin: 10px;
+    border: whitesmoke 1px solid;
+    border-radius: 0.5em;
 }
 
 .card div {
     display: flex;
+    padding: 5px;
 }
 
 .card p {
     text-align: left;
+    margin-top: 0;
 }
 
 #cami {
     height: 150px;
+    border-radius: 50%;
+}
+
+#rosario {
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+
+.card img {
+    height: 100px;
+    padding: 5px 10px 0 0;    
+}
+
+footer {
+    text-align: center;
+    font-weight: 400;
 }
 

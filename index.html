@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
     <header>
@@ -26,22 +27,37 @@
         <section class="card">
             <h3>About me</h3>
             <div>
-            <p>My Name is Julian, I was born in Rosario, Argentina. I have a little son called Camilo.<br>
-               Currently I am studying a major in Software Development at BYU-Idaho trought BYU Pathway Worldwide.<br>
-               I've always loved sports and I have practiced Rugby at Club Atletico del Rosario since I was 5 years old.                 
-            </p>
-            <img id="cami" src="images/meandcami.jpg">
+                <p>My Name is Julian, I was born in Rosario, Argentina. I have a little son called Camilo.<br>
+                Currently I am studying a major in Software Development at BYU-Idaho trought BYU Pathway Worldwide.<br>
+                I've always loved sports and I have practiced Rugby at Club Atletico del Rosario since I was 5 years old.                 
+                </p>
+                <img id="cami" src="images/meandcami.jpg">
+            </div>            
+            <h4 id="rosario">Rosario, Argentina</h4>
+            <hr>
+            <div>
+                <img src="images/argentina.webp">
+                <p>Argentina, officially the Argentine Republic, is a sovereign country in South America, located in the extreme south and southeast of said subcontinent.<br>
+                    Its American continental territory, which covers a large part of the Southern Cone, borders to the north with Bolivia and Paraguay,
+                    to the northeast with Brazil, to the east with Uruguay and the Atlantic Ocean, to the west with Chile and, always in its American sector, to the south with Chile and the Atlantic waters of Drake Passage.                             
+                </p>            
             </div>
         </section>
         <section class="card">
             <h3>Web Dev Resources</h3>
+            <ul>
+                <li>Dev.to Community</li>
+                <li>Smashing Magazine</li>
+                <li>CSS Tricks</li>
+                <li>W3 Schools</li>
+                <li>Udemy</li>
+                <li>Lorem Picsum Image Placeholder</li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>&copy<span id="currentyear"></span> - Julian Maccaferri - Rosario Argentina</p>
+        <p>&copy<span id="currentYear"></span> - Julian Maccaferri - Rosario Argentina</p>
         <p id="lastModified"></p>
-    </footer>
-    
-    
+    </footer>    
 </body>
 </html>

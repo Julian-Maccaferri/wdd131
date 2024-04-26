@@ -22,14 +22,14 @@ nav {
     justify-content: space-around;    
 }
 
-nav a {
+a {
     text-align: center;
     color: whitesmoke;
     text-decoration: none;
     padding: 25px;
 }
 
-nav a:hover {    
+a:hover {    
     text-decoration: underline;
 }
 

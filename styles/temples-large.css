@@ -1,0 +1,42 @@
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+
+    header {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        margin: 0 0 0 auto;
+    }
+
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
+    .hamburger {
+        display: none;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+    img {
+        margin: 10px;
+    }
+
+}
+
+.menu-active nav {
+    display: block; /* Show the menu when active */
+}
+ 

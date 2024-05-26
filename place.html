@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 03 - Assignment: Country Page for Dynamic Web Fundamentals course</title>
+    <meta name="author" content="Julian Maccaferri">
+    <meta name="description" content="Explore Argentina | Data: Geography, Economy, Culture & More ">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/argentina2.webp" media="(max-width: 500px)">
+            <source srcset="images/argentina3.webp" media="(max-width: 1000px)">
+            <img class="hero-img" src="images/argentina.webp" alt="buenos-aires hero image">
+        </picture>
+        <section class="data">
+            <div>
+                <h2>Data</h2>
+            </div>
+            <ul>
+                <li><b>Area:</b> 3,669,711 km²</li>
+                <li><b>Population:</b> 46,654,581</li>
+                <li><b>Capital:</b> Buenos Aires</li>
+                <li><b>Languages:</b> Spanish</li>
+                <li><b>Currency:</b> Peso</li>
+                <li><b>Time Zone:</b> UTC-3</li>
+                <li><b>Calling code:</b> +54</li>
+                <li><b>Internet TLD:</b> .ar</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <div>
+                <h2>Weather</h2>
+                <source srcset="images/clouds.svg" media="(max-width: 1000px)">
+                <img src="images/clouds-large.svg" alt="clouds icon" height="50px" width="50px">
+            </div>
+            <ul>
+                <li><b>Temperature:</b> 14°C</li>
+                <li><b>Conditions:</b> Cloud</li>
+                <li><b>Wind:</b> 3 km/h</li>
+                <li id="windChill"><b>Wind Chill:</b> 6.8°C</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Julian Maccaferri - Rosario Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="scripts/place.js"></script>
+</body>
+</html>

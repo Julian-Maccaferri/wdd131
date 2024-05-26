@@ -1,0 +1,59 @@
+
+:root {
+    --first-color: #1c76c5;
+    --second-color: #FFF;
+  }
+
+* {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-weight: 400;
+    color: var(--second-color);
+    background-color: var(--first-color);
+    padding: 25px;
+}
+
+body {
+	font-family: Roboto, helvetica, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+.hero-img {
+    width: 100%; 
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block; 
+}
+
+.data {
+    margin-top: 25px;
+}
+
+.weather {
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;    
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    font-weight: 400;
+    color: var(--second-color);
+    background-color: var(--first-color);
+    margin-top: 10px;
+    padding: 25px;
+}
+

@@ -42,13 +42,26 @@ document.querySelector("#favorite-foods").appendChild(favoriteFood3);
 document.querySelector("#favorite-foods").appendChild(favoriteFood4);
 document.querySelector("#favorite-foods").appendChild(favoriteFood5);
 
-for (const i of myInfo.favoriteFoods) {
-  console.log(i);
-};
 
-for (const i in myInfo.favoriteFoods) {
-  console.log(i);
-};
+// prectice with loops
+
+  //for-of loop return de value of the reference element in the array
+  for (const i of myInfo.favoriteFoods) {
+    console.log(i);
+  };
+
+  //for-in loop return de key (index) of the reference element in the array
+  for (const i in myInfo.favoriteFoods) {
+    console.log(i);
+  };
+
+  // While loop
+  let count = 0;
+  while (count < myInfo.favoriteFoods.length) {
+    console.log(myInfo.favoriteFoods[count]);
+    count++;
+  }
+
   
   console.log(myInfo.favoriteFoods.indexOf("Steak"));
 
@@ -59,5 +72,3 @@ function createandAppendFoodItem(food) {{
   foodsElement.appendChild(favoriteFood);
 }
 myInfo.favoriteFoods.forEach(createAndAppendFoodItem);}
-
-

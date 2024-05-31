@@ -40,7 +40,7 @@ ul {
     text-align: center;
 }
 
-nav li {
+nav a {
 	display: block;
 	color: #fff;
 	text-align: center;
@@ -48,7 +48,7 @@ nav li {
 	text-decoration: none;
 }
 
-nav li:hover {
+nav a:hover {
 	text-decoration: underline;
     background-color: #0c70c9;
 }

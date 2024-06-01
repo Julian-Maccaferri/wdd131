@@ -142,11 +142,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
-  function parseDedicatedDate(dedicated) {
-    const [year, month, day] = dedicated.split(', ');
-    return new Date(`${month} ${day}, ${year}`);
-  }
-
   displayTemples(temples);
 
   document.querySelector('#navOld').addEventListener('click', () => displayTemples(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900)));

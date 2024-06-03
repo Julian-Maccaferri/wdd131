@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    align-items: center;
+}
+
+/* mobile **************************/
+body {
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    background-color: whitesmoke;
+    color: #3784C6;
+}
+
+header {
+	background-color: #3784C6;	
+    color: whitesmoke;
+	align-items: center;	
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    margin: 1rem;
+}
+
+legend {
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+span {
+    font-weight: normal;
+}
+
+.span-bar {
+    width: 90vw;
+    padding: 5px;
+    max-width: 800px;
+    height: 44px;
+}
+
+label {
+    margin: 10px;
+    align-items: center;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 1.5em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #f90;
+}
+
+.star-rating input[type="radio"]:checked ~ label ~ label {
+    color: #ccc;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #fc0;
+}
+
+form input:required,
+form select:required {
+    border-left: solid 2px red;
+}
+
+form input:required:valid,
+form select:required:valid {
+    border-left: solid 2px green;
+}
+
+#checkbox input {
+    margin-bottom: 5px;
+}
+
+#user-review {
+    height: 88px;
+}
+
+#submit-button {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #3784C6;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #3784C6;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#currentYear {
+    font-weight: bold;
+}
+

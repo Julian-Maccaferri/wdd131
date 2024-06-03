@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Julian Maccaferri</title>
+        <meta name="author" content="Julian Maccaferri">
+        <meta name="description" content="WDD 131 Dynamic Web Fundamentals| Product Review Form">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+        <script defer src="scripts/getdates.js"></script>
+        <script defer src="scripts/form.js"></script>
+    </head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend>Product Name</legend>
+                <select name="product" id="product-name" class="span-bar" required>
+                    <option value="" disabled selected>Select a product...</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="1" required/>
+                    <label for="star-a">&#9733;</label>
+              
+                    <input type="radio" name="stars" id="star-b" value="2" required/>
+                    <label for="star-b">&#9733;</label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3" required/>
+                    <label for="star-c">&#9733;</label>
+                
+                    <input type="radio" name="stars" id="star-d" value="4" required/>
+                    <label for="star-d">&#9733;</label>
+                
+                    <input type="radio" name="stars" id="star-e" value="5" required/>
+                    <label for="star-e">&#9733;</label>
+              </div>
+            </fieldset>             
+            <fieldset>
+                <legend>Date of installation</legend>
+                <input type="date" name="date" id="inst-date" class="span-bar" required>
+            </fieldset>
+            <fieldset id="checkbox">
+                <legend>Which features did you find usefull in the product?<br>
+                    <span><i>(Check all that apply)</i></span>
+                </legend>
+
+                <input type="checkbox" name="durability" id="check-durability" value="yes">
+                <label for="check-durability">Durability</label>
+                <br>
+
+                <input type="checkbox" name="use" id="check-use" value="yes">
+                <label for="check-use">Ease of use</label>
+                <br>
+
+                <input type="checkbox" name="performance" id="check-performance" value="yes">
+                <label for="check-performance">Performance</label>
+                <br>
+
+                <input type="checkbox" name="design" id="check-design" value="yes">
+                <label for="check-design">Design</label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review <span>(Optional)</span></legend>
+                <textarea name="review" id="user-review" class="span-bar"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your name <span>(Optional)</span></legend>
+                <input type="text" name="user" id="" class="span-bar" placeholder="John Doe">
+            </fieldset>
+            <input type="submit" id="submit-button" class="span-bar" value="Post Review"></input>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Julian Maccaferri - Rosario Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

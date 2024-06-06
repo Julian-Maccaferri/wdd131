@@ -18,8 +18,7 @@ header {
     color: whitesmoke;
 	align-items: center;	
 	border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    
+    padding: 20px;    
 }
 
 header, main {
@@ -88,37 +87,67 @@ nav a:hover {
     transform: rotate(-45deg) translate(7.5px, -7.5px);
 }
 
-#hero {
-    display: block;
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    background-image: url(/images/background.webp);
+fieldset {
+    border: none;
+    margin: 1rem;
 }
 
-#hero p {
-font-size: 1rem;
+legend {
+    padding: 10px 0;
+    font-weight: bold;
 }
 
-#welcome {
-    margin: 0 auto;
-    padding: 1rem;
+span {
+    font-weight: normal;
 }
 
-section {
-    text-align: center;
+.span-bar {
+    width: 90vw;
+    padding: 5px;
+    max-width: 800px;
+    height: 44px;
 }
 
-img {
-    height: fit-content;
-    width: 200px;
-    margin: 0 20px;
+label {
+    margin: 10px;
+    align-items: center;
+}
+
+form input:required,
+form select:required {
+    border-left: solid 2px red;
+}
+
+form input:required:valid,
+form select:required:valid {
+    border-left: solid 2px green;
+}
+
+#checkbox input {
+    margin-bottom: 5px;
+}
+
+#user-review {
+    height: 88px;
+}
+
+#submit-button {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #3784C6;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #999;
 }
 
 footer {
     text-align: center;
-    font-weight: 400;
+    font-weight: bold;
     color: whitesmoke;
     background-color: #3784C6;
+    margin-top: 10px;
     padding: 10px;
 }
 
@@ -126,4 +155,8 @@ footer a {
     color: whitesmoke;
     text-decoration: none;
     pointer-events: hand;
+}
+
+#currentYear {
+    font-weight: bold;
 }

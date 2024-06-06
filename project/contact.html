@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals | Julian Maccaferri | Final Project | Contact Me</title>
+        <meta name="author" content="Julian Maccaferri">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Julian Maccaferri -
+        Final Project page to demonstrate mastery of the course learning outcomes in HTML, CSS, and JavaScript to create a dynamic and responsive website that adheres to development standards.">
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="styles/contact-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+        <script defer src="scripts/project.js"></script>
+        <script defer src="scripts/getdates.js"></script>
+        <script defer src="/scripts/getdates.js"></script>
+    </head>
+<body>
+    <header>
+        <h1>Contac Me</h1>
+        <nav>
+            <ul>
+                <li><a href="/project.html">Home</a></li>
+                <li><a href="/project/portfolio.html">Portfolio</a></li>
+                <li><a href="/project/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend>Choose your service</legend>
+                <select name="service" id="service" class="span-bar" required>
+                    <option value="" disabled selected>Select a service...</option>
+                </select>
+            </fieldset>         
+            <fieldset>
+                <legend>Deadline</legend>
+                <input type="date" name="date" id="inst-date" class="span-bar" required>
+            </fieldset>
+            <fieldset id="checkbox">
+                <legend>Which service could I improve?<br>
+                    <span><i>(Check all that apply)</i></span>
+                </legend>
+
+                <input type="checkbox" name="quality" id="check-quality" value="yes">
+                <label for="check-quality">Quality</label>
+                <br>
+
+                <input type="checkbox" name="deliver" id="check-deliver" value="yes">
+                <label for="check-deliver">Time of deliver</label>
+                <br>
+
+                <input type="checkbox" name="performance" id="check-performance" value="yes">
+                <label for="check-performance">Performance</label>
+                <br>
+
+                <input type="checkbox" name="design" id="check-design" value="yes">
+                <label for="check-design">Design</label>
+                <br>
+
+                <input type="checkbox" name="other" id="check-other" value="yes">
+                <label for="check-other">Other</label>
+                <br>
+                <input type="text" name="describe" id="describe" class="span-bar" placeholder="Describe">
+            </fieldset>
+            <fieldset>
+                <legend>Written Review <span>(Optional)</span></legend>
+                <textarea name="review" id="user-review" class="span-bar"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your name <span>(Optional)</span></legend>
+                <input type="text" name="user" id="user-name" class="span-bar" placeholder="John Doe">
+            </fieldset>
+            <input type="submit" id="submit-button" class="span-bar" value="Make your Order">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Julian Maccaferri - Rosario Argentina</p>
+        <p id="lastModified"></p>
+        <a href="project/attribution.html">Attributions</a>
+    </footer>
+</body>
+</html>

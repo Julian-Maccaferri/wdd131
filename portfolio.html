@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals | Julian Maccaferri | Final Project</title>
+    <title>WDD 131 - Dynamic Web Fundamentals | Julian Maccaferri | Portfolio</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Julian Maccaferri -
     Final Project page to demonstrate mastery of the course learning outcomes in HTML, CSS, and JavaScript to create a dynamic and responsive website that adheres to development standards.">
-    <link rel="stylesheet" href="styles/project.css">
-    <link rel="stylesheet" href="styles/project-medium.css">
-    <link rel="stylesheet" href="styles/project-large.css">
+    <meta name="author" content="Julian Maccaferri">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/portfolio-medium.css">
+    <link rel="stylesheet" href="styles/portfolio-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="author" content="Julian Maccaferri">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
     <script defer src="scripts/project.js"></script>
+    <script defer src="scripts/filtered-projects.js"></script>
     <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
@@ -21,9 +22,10 @@
         <h1>JM Web Developer</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li id="navHome"><a href="project.html"><b>Home</b></a></li>
+                <li id="navRos"><a href="#"><b>Rosario</b></a></li>
+                <li id="navSf"><a href="#"><b>Santa Fe</b></a></li>
+                <li id="navBsAs"><a href="#"><b>Bs As</b></a></li>
             </ul>
         </nav>
         <div class="hamburger" id="hamburger">
@@ -33,20 +35,12 @@
         </div>
     </header>
     <main>
-        <div id="hero">
-            <section id="welcome">
-                <h2>Welcome to my portfolio</h2>        
-                <p>Hello, I'm Julian Maccaferri, web developer.</p>            
-            </section>
-            <section>
-                <img src="images/profile.webp" alt="profile picture of myself" loading="lazy">
-            </section>
-        </div>
+
     </main>
     <footer>
         <p>&copy;<span id="currentYear"></span> - Julian Maccaferri - Rosario Argentina</p>
         <p id="lastModified"></p>
         <a href="attribution.html">Attributions</a>
-    </footer>    
+    </footer>
 </body>
 </html>

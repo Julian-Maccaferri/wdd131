@@ -1,0 +1,50 @@
+/* Medium Views ******************************/
+@media (min-width: 500px) {
+
+    header {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+    }
+
+    h1 {
+        max-width: fit-content;
+    }
+
+    nav {
+        display: flex;
+        margin: 0 0 0 auto;
+    }
+
+	nav ul {
+		display: flex;
+	}
+
+	/*nav ul li {
+		flex: 1 1 100%;
+	}*/
+
+    .hamburger {
+        display: none;
+    }
+
+    #hero {
+        height: 200px;
+        display: flex;
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        margin-right: 1rem;
+    }
+
+}
+
+.menu-active nav {
+    display: block; /* Show the menu when active */
+}

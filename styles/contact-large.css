@@ -1,0 +1,43 @@
+/* Medium Views ******************************/
+@media (min-width: 750px) {
+
+    header {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+    }
+
+    h1 {
+        max-width: fit-content;
+    }
+
+    nav {
+        display: flex;
+        margin: 0 0 0 auto;
+    }
+
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
+    img {
+        margin: 10px;        
+    }
+
+}
+
+.menu-active nav {
+    display: block; /* Show the menu when active */
+}
